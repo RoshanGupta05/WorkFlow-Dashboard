@@ -1,0 +1,168 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background-color: #f1f5f9; /* Light grayish background */
+  color: #333; /* Dark gray text */
+}
+
+/* Container Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Left Sidebar */
+.left-sidebar {
+  width: 240px;
+  background-color: #1e293b; /* Dark blue-gray */
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-sidebar button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  background: #334155; /* Slightly lighter blue-gray */
+  border: none;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.left-sidebar button:hover {
+  background: #475569; /* Brighter on hover */
+}
+
+/* Right Sidebar */
+.right-sidebar {
+  width: 300px;
+  background: #f8fafc; /* Off-white */
+  border-left: 1px solid #e2e8f0;
+  padding: 20px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.right-sidebar h3 {
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.right-sidebar input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.right-sidebar input:focus {
+  outline: none;
+  border-color: #3b82f6; /* Blue focus */
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* Blue glow */
+}
+
+/* Main Canvas */
+.canvas {
+  flex: 1;
+  background-color: white;
+  border-left: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Analytics Section */
+.analytics {
+  padding: 20px;
+  background: #e5e7eb; /* Light gray */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analytics h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1e293b;
+}
+
+.analytics canvas {
+  margin: 20px 0;
+}
+
+/* Buttons */
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px 15px;
+  background-color: #3b82f6; /* Bright blue */
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #2563eb; /* Darker blue */
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Collapsible Sidebar Toggle */
+.toggle-sidebar {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: transparent;
+  border: none;
+  color: #1e293b;
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.toggle-sidebar:hover {
+  transform: rotate(90deg); /* Rotate icon for fun effect */
+}
+
+/* Headings */
+h3 {
+  font-size: 20px;
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+/* Utility Classes */
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}

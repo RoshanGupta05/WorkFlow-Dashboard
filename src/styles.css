@@ -1,0 +1,26 @@
+.default-node {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #e0f7fa;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.default-node strong {
+  font-size: 1rem;
+  color: #000;
+}
+
+.default-node div {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.handle-top {
+  background: #0277bd;
+}
+
+.handle-bottom {
+  background: #0277bd;
+}

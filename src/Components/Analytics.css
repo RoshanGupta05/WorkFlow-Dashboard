@@ -1,0 +1,51 @@
+.analytics-container {
+  display: flex;
+  flex-direction: row;
+  width: 28%;
+  transition: width 0.5s ease;
+}
+
+.analytics-container.collapsed {
+  width: 50px;
+}
+
+.collapse-toggle {
+  background-color: #f0f0f0;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collapse-toggle:hover {
+  background-color: #e0e0e0;
+}
+
+.vertical-label {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.analytics-content {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.chart-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
